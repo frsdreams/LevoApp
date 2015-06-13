@@ -1,0 +1,43 @@
+<ion-view view-title="">
+    <ion-content ng-class="{expanded:$scope.isExpanded}">
+        <div class="hero slide-up" style="background-image: url('img/about-bg.jpg');">
+            <div class="content">
+               <!--  <div class="avatar" style="background-image: url('img/daenerys.jpg');"></div> -->
+                <!-- <h3><a class="light">Levo History</a></h3> -->
+                
+            </div>
+        </div>
+    <div class="aboutsection">    
+         <h4> Write to Us !</h4>
+      
+        <form ng-submit="saveMessage(message)">
+        
+        <div class="list"> 
+            <label class="item item-input item-floating-label"> 
+                <span class="input-label">Name</span> 
+                <input type="text" placeholder="Name" ng-model="message.name"> 
+            </label> 
+            <label class="item item-input item-floating-label"> 
+                <span class="input-label">Email Id</span> 
+                <input type="text" placeholder="Email Id"  ng-model="message.email"> 
+            </label>
+            <label class="item item-input item-floating-label"> 
+                <span class="input-label">Phone Number</span> 
+                <input type="text" placeholder="Phone No"  ng-model="message.phone"> 
+            </label>
+            <label class="item item-input item-floating-label"> 
+                <span class="input-label">Message</span> 
+                <textarea placeholder="Message" rows="8"  ng-model="message.messagetxt"></textarea>
+               
+            </label>
+            <br /> 
+          
+            <button type="submit" class="button button-block button-calm ink" data-ink-color="#9DEAFF" data-ink-opacity="1"> Submit </button> 
+            </div>
+        </form>
+        
+                
+        </div>
+        
+    </ion-content>
+</ion-view>

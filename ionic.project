@@ -1,0 +1,12 @@
+{
+  "name": "levoTest2",
+  "app_id": "258df40d",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}
